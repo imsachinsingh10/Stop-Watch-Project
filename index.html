@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+     <!--Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:500,700&display=swap" rel="stylesheet">
+
+     <!--Bootstrap CDN-->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--mycss-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    
+    <div class="record">
+        <a id="stopWatch" href="index2.html"><i class="fas fa-stopwatch"></i> View History</a>
+    </div>
+
+    <div class="wrap">
+
+        <div id="timer">
+
+            <svg width="260" height="260">
+                <circle class="defaultCircle" cx="125" cy="125" r="120" stroke="#ff88fb" stroke-width="10" fill="none" stroke-linecap="round" />
+            </svg>
+
+            <span id="hour">00</span>  :
+            <span id="minute">00</span>  :
+            <span id="second">00</span>  :
+            <span id="millisecond">00</span>
+        </div>
+        <p>Your time starts now</p>
+        <div class="option">
+            <a id="play" onclick="playFunc();" href="javascript:void(0)"><i class="fas fa-play"></i><i class="fas fa-pause"></i></a>
+            <a id="stop" onclick="stopFunc();" href="javascript:void(0)"><i class="fas fa-stop"></i> Stop</a>
+            <a id="reset" onclick="resetFunc();" href="javascript:void(0)"><i class="fas fa-undo"></i></a>
+        </div>
+    </div>
+
+    <!-- JS files -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mainScript.js"></script>
+
+</body>
+</html>
